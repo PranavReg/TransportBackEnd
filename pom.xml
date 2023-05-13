@@ -47,16 +47,6 @@
     		<artifactId>junit-dep</artifactId>
     		<version>4.8.2</version>
 		</dependency>
-		<dependency>
-  <groupId>org.codehaus.plexus</groupId>
-  <artifactId>plexus-archiver</artifactId>
-  <version>3.4</version>
-</dependency>
-<dependency>
-  <groupId>javax.activation</groupId>
-  <artifactId>javax.activation-api</artifactId>
-  <version>1.2.0</version>
-</dependency>
 	</dependencies>
 
 	<build>
@@ -74,28 +64,6 @@
     			</additionalClasspathElements>
 			</configuration>
 		</plugin>
-		
-		<plugin>
-       <groupId>com.spotify</groupId>
-       <artifactId>dockerfile-maven-plugin</artifactId>
-       <version>1.4.13</version>
-       <executions>
-         <execution>
-           <id>default</id>
-           <goals>
-             <goal>build</goal>
-             <goal>push</goal>
-           </goals>
-        </execution>
-      </executions>
-      <configuration>
-		  <repository>pranavregatte/transportapprepo1</repository>
-		  <tag>transportbackend</tag>
-        <buildArgs>
-          <JAR_FILE>target/universityTransportation-0.0.1-SNAPSHOT.jar</JAR_FILE>
-        </buildArgs>
-      </configuration>
-    </plugin>
     
 		</plugins>
 	</build>

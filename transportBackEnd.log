@@ -43,3 +43,55 @@
 2023-05-13T13:04:56.116-04:00 DEBUG 11520 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
 2023-05-13T13:04:56.117-04:00 DEBUG 11520 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.university.model.Student@4b916846, com.university.model.Student@164c954b, com.university.model. (truncated)...]
 2023-05-13T13:04:56.125-04:00 DEBUG 11520 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-05-13T17:22:49.134-04:00  INFO 16180 --- [main] c.u.UniversityTransportationApplication  : Starting UniversityTransportationApplication using Java 17.0.6 with PID 16180 (G:\TransportBackEnd\target\classes started by ranad in G:\TransportBackEnd)
+2023-05-13T17:22:49.142-04:00  INFO 16180 --- [main] c.u.UniversityTransportationApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-05-13T17:22:49.991-04:00  INFO 16180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-13T17:22:50.090-04:00  INFO 16180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+2023-05-13T17:22:50.830-04:00  INFO 16180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-05-13T17:22:50.857-04:00  INFO 16180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-13T17:22:50.858-04:00  INFO 16180 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-13T17:22:51.035-04:00  INFO 16180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-13T17:22:51.035-04:00  INFO 16180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1783 ms
+2023-05-13T17:22:51.263-04:00  INFO 16180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-13T17:22:52.630-04:00  INFO 16180 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65cc5252
+2023-05-13T17:22:52.641-04:00  INFO 16180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-13T17:22:52.730-04:00  INFO 16180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-13T17:22:52.827-04:00  INFO 16180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-13T17:22:53.574-04:00  INFO 16180 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-13T17:22:53.956-04:00  WARN 16180 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.university.model.BookingId
+2023-05-13T17:22:53.957-04:00  WARN 16180 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.university.model.BookingId
+2023-05-13T17:22:54.773-04:00  INFO 16180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-13T17:22:54.801-04:00  INFO 16180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-13T17:22:55.431-04:00  WARN 16180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-13T17:22:55.577-04:00 DEBUG 16180 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-05-13T17:22:55.689-04:00 DEBUG 16180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2023-05-13T17:22:55.742-04:00 DEBUG 16180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-05-13T17:22:55.760-04:00 DEBUG 16180 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-05-13T17:22:55.927-04:00  WARN 16180 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-05-13T17:22:55.931-04:00  INFO 16180 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-13T17:22:55.934-04:00  INFO 16180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-13T17:22:56.295-04:00  INFO 16180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-13T17:22:56.298-04:00  INFO 16180 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-13T17:22:56.317-04:00  INFO 16180 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-05-13T17:22:56.342-04:00 ERROR 16180 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2023-05-13T17:23:02.965-04:00  INFO 11520 --- [RMI TCP Connection(262)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-13T17:23:03.191-04:00  INFO 11520 --- [RMI TCP Connection(262)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-13T17:23:03.213-04:00  INFO 11520 --- [RMI TCP Connection(262)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-13T17:23:03.297-04:00  INFO 11520 --- [RMI TCP Connection(262)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-13T17:23:03.356-04:00  INFO 11520 --- [RMI TCP Connection(262)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-13T17:23:03.390-04:00  INFO 11520 --- [RMI TCP Connection(262)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
