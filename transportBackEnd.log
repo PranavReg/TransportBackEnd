@@ -1,0 +1,45 @@
+2023-05-13T13:04:39.554-04:00  INFO 11520 --- [main] c.u.UniversityTransportationApplication  : Starting UniversityTransportationApplication using Java 17.0.6 with PID 11520 (G:\TransportBackEnd\target\classes started by ranad in G:\TransportBackEnd)
+2023-05-13T13:04:39.567-04:00  INFO 11520 --- [main] c.u.UniversityTransportationApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-05-13T13:04:40.332-04:00  INFO 11520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-13T13:04:40.422-04:00  INFO 11520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+2023-05-13T13:04:41.015-04:00  INFO 11520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-05-13T13:04:41.028-04:00  INFO 11520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-13T13:04:41.028-04:00  INFO 11520 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-13T13:04:41.179-04:00  INFO 11520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-13T13:04:41.181-04:00  INFO 11520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1512 ms
+2023-05-13T13:04:41.380-04:00  INFO 11520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-13T13:04:41.754-04:00  INFO 11520 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65cc5252
+2023-05-13T13:04:41.757-04:00  INFO 11520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-13T13:04:41.813-04:00  INFO 11520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-13T13:04:41.884-04:00  INFO 11520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-13T13:04:42.358-04:00  INFO 11520 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-13T13:04:42.632-04:00  WARN 11520 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.university.model.BookingId
+2023-05-13T13:04:42.633-04:00  WARN 11520 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.university.model.BookingId
+2023-05-13T13:04:43.226-04:00  INFO 11520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-13T13:04:43.250-04:00  INFO 11520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-13T13:04:43.741-04:00  WARN 11520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-13T13:04:43.880-04:00 DEBUG 11520 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-05-13T13:04:43.974-04:00 DEBUG 11520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2023-05-13T13:04:44.008-04:00 DEBUG 11520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-05-13T13:04:44.020-04:00 DEBUG 11520 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-05-13T13:04:44.165-04:00  INFO 11520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-13T13:04:44.176-04:00  INFO 11520 --- [main] c.u.UniversityTransportationApplication  : Started UniversityTransportationApplication in 5.204 seconds (process running for 6.127)
+2023-05-13T13:04:50.880-04:00  INFO 11520 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-13T13:04:50.880-04:00  INFO 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-13T13:04:50.880-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-05-13T13:04:50.880-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-05-13T13:04:50.881-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-05-13T13:04:50.882-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2d97344c
+2023-05-13T13:04:50.882-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@477906cf
+2023-05-13T13:04:50.883-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-05-13T13:04:50.883-04:00  INFO 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-13T13:04:50.894-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/shuttleRoutes", parameters={}
+2023-05-13T13:04:50.913-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.university.controller.ScheduleController#getRouteDetails()
+2023-05-13T13:04:51.190-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-05-13T13:04:51.192-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.university.model.Route@50514879]]
+2023-05-13T13:04:51.278-04:00 DEBUG 11520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-05-13T13:04:56.095-04:00 DEBUG 11520 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}
+2023-05-13T13:04:56.096-04:00 DEBUG 11520 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.university.controller.RegistrationController#allUsers()
+2023-05-13T13:04:56.116-04:00 DEBUG 11520 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-05-13T13:04:56.117-04:00 DEBUG 11520 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.university.model.Student@4b916846, com.university.model.Student@164c954b, com.university.model. (truncated)...]
+2023-05-13T13:04:56.125-04:00 DEBUG 11520 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
