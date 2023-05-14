@@ -69,6 +69,7 @@
 		</plugin>
     
 		</plugins>
+		<finalName>springbootApp</finalName>
 	</build>
 
 </project>
