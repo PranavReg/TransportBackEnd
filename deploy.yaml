@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: public.ecr.aws/u4d5u4q9/transportrepository@sha256:24b9d18bec1715c6f50283a1122f205b93651dd0171e7deb8c1db05dd6e12cb6
+        image: public.ecr.aws/u4d5u4q9/transportrepository:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
