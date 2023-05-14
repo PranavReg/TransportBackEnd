@@ -126,3 +126,58 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2023-05-13T17:39:57.653-04:00  INFO 15292 --- [RMI TCP Connection(20)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-13T17:39:57.657-04:00  INFO 15292 --- [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-05-13T17:39:58.395-04:00  INFO 15292 --- [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-13T20:49:31.352-04:00  INFO 12608 --- [main] c.u.UniversityTransportationApplication  : Starting UniversityTransportationApplication using Java 17.0.6 with PID 12608 (G:\TransportBackEnd\target\classes started by ranad in G:\TransportBackEnd)
+2023-05-13T20:49:31.357-04:00  INFO 12608 --- [main] c.u.UniversityTransportationApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-05-13T20:49:32.528-04:00  INFO 12608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-13T20:49:32.627-04:00  INFO 12608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+2023-05-13T20:49:33.399-04:00  INFO 12608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-05-13T20:49:33.424-04:00  INFO 12608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-13T20:49:33.424-04:00  INFO 12608 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-13T20:49:33.673-04:00  INFO 12608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-13T20:49:33.678-04:00  INFO 12608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2218 ms
+2023-05-13T20:49:33.857-04:00  INFO 12608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-13T20:49:35.041-04:00  INFO 12608 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41aebbb4
+2023-05-13T20:49:35.053-04:00  INFO 12608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-13T20:49:35.133-04:00  INFO 12608 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-13T20:49:35.213-04:00  INFO 12608 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-13T20:49:35.799-04:00  INFO 12608 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-13T20:49:36.094-04:00  WARN 12608 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.university.model.BookingId
+2023-05-13T20:49:36.094-04:00  WARN 12608 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.university.model.BookingId
+2023-05-13T20:49:36.734-04:00  INFO 12608 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-13T20:49:36.749-04:00  INFO 12608 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-13T20:49:37.247-04:00  WARN 12608 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-13T20:49:37.441-04:00 DEBUG 12608 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-05-13T20:49:37.588-04:00 DEBUG 12608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2023-05-13T20:49:37.661-04:00 DEBUG 12608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-05-13T20:49:37.679-04:00 DEBUG 12608 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-05-13T20:49:37.853-04:00  INFO 12608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-05-13T20:49:37.865-04:00  INFO 12608 --- [main] c.u.UniversityTransportationApplication  : Started UniversityTransportationApplication in 7.123 seconds (process running for 8.06)
+2023-05-13T20:50:18.836-04:00  INFO 12608 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-13T20:50:18.837-04:00  INFO 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-13T20:50:18.838-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-05-13T20:50:18.838-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-05-13T20:50:18.838-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-05-13T20:50:18.840-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1d988297
+2023-05-13T20:50:18.840-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5c04ec8
+2023-05-13T20:50:18.841-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-05-13T20:50:18.841-04:00  INFO 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-05-13T20:50:18.856-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}
+2023-05-13T20:50:18.884-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.university.controller.RegistrationController#allUsers()
+2023-05-13T20:50:19.634-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-05-13T20:50:19.636-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.university.model.Student@3f867594, com.university.model.Student@436f3e7, com.university.model.S (truncated)...]
+2023-05-13T20:50:19.701-04:00 DEBUG 12608 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-05-13T20:50:19.785-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-05-13T20:50:19.791-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-05-13T20:50:19.795-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-05-13T20:50:19.796-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-05-13T20:50:19.808-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-05-13T20:50:19.810-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-05-13T20:50:19.828-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2023-05-13T20:50:19.829-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat May 13 20:50:19 EDT 2023, status=404, error=Not Found, path=/favicon.ico}]
+2023-05-13T20:50:19.853-04:00 DEBUG 12608 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-05-13T20:57:02.037-04:00  INFO 12608 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-13T20:57:02.056-04:00  INFO 12608 --- [RMI TCP Connection(12)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-13T20:57:02.057-04:00  INFO 12608 --- [RMI TCP Connection(12)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-13T20:57:02.069-04:00  INFO 12608 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-13T20:57:02.072-04:00  INFO 12608 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-13T20:57:02.927-04:00  INFO 12608 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
