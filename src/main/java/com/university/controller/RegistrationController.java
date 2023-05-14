@@ -62,11 +62,11 @@ public class RegistrationController {
 	@CrossOrigin()
 	public ResponseEntity<Object> login(@RequestBody Login login){
 		Optional<Login> studentlogin;
-		
-		
+		System.out.println(login.getId()+login.getPassword());
 		if(!loginService.checkNotAUser(login.getId()).isEmpty()) {
 			studentlogin=loginService.login(login.getId(),login.getPassword());
 			if(!studentlogin.isEmpty()) {
+				System.out.println("Inside ok");
 				return ResponseEntity.status(HttpStatus.OK).body(studentlogin);
 			}
 			else {
